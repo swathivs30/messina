@@ -1,0 +1,89 @@
+body{
+	background: #FAEBD7; 
+}
+.header{
+	height: 200px;
+	background: none;	
+}
+.logo1 {
+	position: 0px auto;
+	background: none;
+	padding: 2px 2px 2px 2px;
+}
+h1.logo1{
+	font-style: Impact;
+	font-size: 6px;
+}
+p.logo1 {
+	font-style: cursive;
+}
+nav{
+	display: inline;
+	height: 20px;
+	background: none;
+	padding: 0px 40px 0px 200px;	
+}
+nav li {
+	display: inline-block;
+}
+
+header a, footer a, a .side_bar :hover {
+	color:blue;
+	font-size: 20px;
+	font-style: italic;
+	text-decoration: none;
+}
+.page_container{
+	padding: 10px 10px 10px 10px;
+	background: rgba(0, 0, 0, 0.5);	
+	width: 960px;
+	height: 600px
+}
+.page_content{
+	background: rgba(0, 0, 0, 0.5);	
+	width: 700px;
+	height: 550
+}
+p.page_content{
+	float:left;
+	width: 300px;
+	height: 300px;
+	font-size: 50px;
+	font-style: monospace;
+}
+h1.page_content{
+	font-style: monospace;
+	font-size: 20px;
+}
+h2.page_content{
+	font-style: monospace;
+	font-size: 10px;
+}
+.side_bar{
+	position: relative;
+	float : right;
+	width: 200px;
+	height :550px;
+	padding: 2px 2px 300px 2px;
+}
+h3{
+	font-size: 25px;
+	font-style: underline;
+}
+footer{
+	height: 200px;
+}
+.footer_content{
+	padding: 10px 10px 10px 10px;
+}
+ li .footer_content {
+	display: inline-block;
+	float: left;
+	width: 100px;
+	height: 100px;
+}
+
+
+
+
+
