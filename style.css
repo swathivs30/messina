@@ -1,87 +1,148 @@
 body{
-	background: #FAEBD7; 
+	background: #ffffff; 
 }
-.header{
-	height: 200px;
-	background: none;	
+h1 {
+	font-size: 25px;
+	font-family: sans-serif;
 }
-.logo1 {
-	position: 0px auto;
-	background: none;
-	padding: 2px 2px 2px 2px;
+h2 {
+	font-size: 10px;
 }
-h1.logo1{
-	font-style: Impact;
-	font-size: 6px;
+h3 {
+	font-size: 21px;
 }
-p.logo1 {
-	font-style: cursive;
-}
-nav{
-	display: inline;
-	height: 20px;
-	background: none;
-	padding: 0px 40px 0px 200px;	
-}
-nav li {
-	display: inline-block;
-}
-
-header a, footer a, a .side_bar :hover {
-	color:blue;
+a {
+	color:#808080;
 	font-size: 20px;
 	font-style: italic;
 	text-decoration: none;
 }
+a:hover {
+    color: blue;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+}
+.header{
+	background: #ffffff;
+	height: 200px;
+	font-style: sans-serif;
+}
+.logo1 {
+	background: url('images/Untitled-2.png');
+	display: block;
+	height: 91px;
+	margin: 0 auto;
+	width: 222px;	
+}	
+nav{
+	border-top: 2px #808080 solid;
+	border-bottom: 2px #808080 solid;
+	background: none;
+	margin: 20px auto;	
+	height: 32px;
+	padding-top: 3px;
+}
+nav ul {
+	font-style: normal;	
+	margin: 0 auto;
+	padding: 0;
+	width: 630px;	
+}
+nav ul li {
+	display: inline-block;
+	margin: 0px 40px;
+	text-transform:uppercase;	
+}
+nav a  {
+	font-style: normal;
+}
+nav a:hover {
+	border-top: 4px #808080 solid;	
+    color: #808080;
+}
 .page_container{
-	padding: 10px 10px 10px 10px;
-	background: rgba(0, 0, 0, 0.5);	
-	width: 960px;
-	height: 600px
+	background: #ffffff;
+	height: 500px;
+	margin: 0px auto;
+	padding: 18px 10px 10px 36px;	
+	width: 960px;	
 }
 .page_content{
-	background: rgba(0, 0, 0, 0.5);	
-	width: 700px;
-	height: 550
-}
-p.page_content{
-	float:left;
-	width: 300px;
-	height: 300px;
 	font-size: 50px;
-	font-style: monospace;
+	font-style: georgia;
+	float:left;
+	height: 200px;
+	width: 300px;
 }
-h1.page_content{
-	font-style: monospace;
-	font-size: 20px;
+section {
+	float: left;
+	width: 655px;
 }
-h2.page_content{
-	font-style: monospace;
-	font-size: 10px;
+section p {
+	text-align:justify;
+	text-justify:inter-word;
+	-moz-column-count:2; /* Firefox */
+	-webkit-column-count:2; /* Safari and Chrome */
+	column-count:2;	
 }
-.side_bar{
+.side_bar {
+	float: left;
+	height :210px;
+	padding: 5px 0px 300px 63px;
+	width: 210px;
+}
+
+.side_bar ul li {
+	margin: 10px 0;
 	position: relative;
-	float : right;
-	width: 200px;
-	height :550px;
-	padding: 2px 2px 300px 2px;
+
 }
-h3{
-	font-size: 25px;
-	font-style: underline;
+
+.side_bar ul li a:hover:before {
+	content: "\00BB";
+	position: absolute;
+	left: -10px;
+	display: block;
+}
+#submitButton {
+	height: 30px;
+	background: blue;
 }
 footer{
-	height: 200px;
+	background: url('images/background.jpg');
+	color: #f4f3fe;
+	display: block;
+	height: 180px; 
+	overflow: hidden;
+	padding: 25px 0;
+	width: 100%;
 }
-.footer_content{
-	padding: 10px 10px 10px 10px;
-}
- li .footer_content {
+footer ul {
 	display: inline-block;
 	float: left;
-	width: 100px;
-	height: 100px;
+	margin: 0 23px;
+	padding: 0;
+	width: 200px;
+}  
+footer ul:first-child {
+	margin: 0 40px 0 0;	
 }
+.footer_content {
+	margin: 0 auto;
+	width: 960px;
+}
+#logo2 {
+	background: url('images/messina-about_03.jpg');
+	float: left;
+	height: 100px;
+	margin: 0 0 0 25px;
+	width: 200px;
+}
+
+
 
 
 
