@@ -1,34 +1,39 @@
+@font-face {
+	font-family: junction;
+	src: url('font/Junction-webfont.ttf');
+}
+
 body{
 	background: #ffffff; 
 }
 h1 {
-	font-size: 25px;
-	font-family: sans-serif;
+	font-size: 27px;
+	font-family: junction;
+	font-weight: bold;
 }
 h2 {
-	font-size: 10px;
+	font-size: 23px;
+	font-family: junction;
+	font-weight: lighter;
 }
 h3 {
 	font-size: 21px;
+	font-weight: lighter;
+	margin:1 0 0 0;
 }
 a {
-	color:#808080;
+	color: #808080;
 	font-size: 20px;
 	font-style: italic;
 	text-decoration: none;
 }
-a:hover {
-    color: blue;
-}
-
 ul {
 	list-style: none;
 	padding: 0;
 }
 .header{
 	background: #ffffff;
-	height: 200px;
-	font-style: sans-serif;
+	font-family: junction;
 }
 .logo1 {
 	background: url('images/Untitled-2.png');
@@ -41,20 +46,20 @@ nav{
 	border-top: 2px #808080 solid;
 	border-bottom: 2px #808080 solid;
 	background: none;
-	margin: 20px auto;	
+	margin: 21px auto;	
 	height: 32px;
-	padding-top: 3px;
+	padding-top: 0px;
 }
 nav ul {
 	font-style: normal;	
 	margin: 0 auto;
 	padding: 0;
-	width: 630px;	
+	width: 404px;	
 }
 nav ul li {
 	display: inline-block;
-	margin: 0px 40px;
-	text-transform:uppercase;	
+	margin: 0px 12px;
+	text-transform: uppercase;	
 }
 nav a  {
 	font-style: normal;
@@ -67,49 +72,58 @@ nav a:hover {
 	background: #ffffff;
 	height: 500px;
 	margin: 0px auto;
-	padding: 18px 10px 10px 36px;	
+	padding: 15px 10px 10px 39px;	
 	width: 960px;	
 }
 .page_content{
 	font-size: 50px;
-	font-style: georgia;
-	float:left;
-	height: 200px;
-	width: 300px;
+	font-family: georgia;
+	float: left;
+	height: 700x;
+	padding-top: 0px;
+	width: 655px;
 }
 section {
 	float: left;
 	width: 655px;
 }
+section h1 {
+	margin: 9px 0px 18px 0;
+}
 section p {
-	text-align:justify;
-	text-justify:inter-word;
-	-moz-column-count:2; /* Firefox */
-	-webkit-column-count:2; /* Safari and Chrome */
-	column-count:2;	
+	font-size: 18px;
+	font-family: georgia;
+	text-align:j ustify;
+	column-count: 2;
+	-moz-column-count: 2; /* Firefox */
+	-webkit-column-count: 2; /* Safari and Chrome */	
+	-webkit-column-gap: 55px;
 }
 .side_bar {
 	float: left;
 	height :210px;
-	padding: 5px 0px 300px 63px;
+	padding: 9px 0px 0px 63px;
 	width: 210px;
 }
-
 .side_bar ul li {
 	margin: 10px 0;
 	position: relative;
-
 }
-
 .side_bar ul li a:hover:before {
 	content: "\00BB";
-	position: absolute;
-	left: -10px;
 	display: block;
+	left: -10px;
+	position: absolute;
 }
 #submitButton {
-	height: 30px;
-	background: blue;
+	border: 1px solid #808080;
+	background: #ffffff;
+	height: 28px;
+	width: 50px;
+}
+footer ul li a:hover:before {
+	content: "\00BB";
+	left: -10px;	
 }
 footer{
 	background: url('images/background.jpg');
