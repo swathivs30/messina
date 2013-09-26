@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'junction';
-  src: url('Junction-webfont.eot'); /* IE 5-8 */ 
+  src: url('font/Junction-webfont.eot'); /* IE 5-8 */ 
   src: local('?'),            
-        url('Junction-webfont.woff') format('woff'),    
-        url('Junction-webfont.ttf') format('truetype'), 
-        url('Junction-webfont.svg#font') format('svg'); /* iOS */
+        url('font/Junction-webfont.woff') format('woff'),    
+        url('font/Junction-webfont.ttf') format('truetype'), 
+        url('font/Junction-webfont.svg#font') format('svg'); /* iOS */
 }
 body{
 	background: #ffffff; 
