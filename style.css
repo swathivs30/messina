@@ -9,26 +9,22 @@
 body{
 	background: #ffffff; 
 }
-h1 {
+h1, h2, h3 {
 	color: #2f2e46;
-	background: #ffffff;
+	font-weight: lighter;
+}
+h1 {
 	font-size: 27px;
 	font-family: 'junction';
-	font-weight: lighter;
 }
 h2 {
-	color: #2f2e46;
-	background: #ffffff;
 	font-size: 23px;
 	font-family: 'junction';
-	font-weight: lighter;
 }
 h3 {
-	color: #2f2e46;
-	background: #ffffff;
 	font-family: Arial Verdana;
 	font-size: 19px;
-	font-weight: lighter;
+	
 	margin:34px 0 0 0;
 }
 a {
@@ -78,9 +74,9 @@ nav a  {
 	font-style: normal;
 }
 nav a:hover {
-	border-top: 4px black solid;
+	border-top: 4px #000000 solid;
     border-spacing: 40px;
-    color: black;
+    color: #000000;
     padding: 9px 0 1px 0;
 }
 .page_container {
