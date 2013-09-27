@@ -8,6 +8,7 @@
 }
 body{
 	background: #ffffff; 
+	font-family: 'junction';
 }
 h1, h2, h3 {
 	color: #2f2e46;
@@ -15,7 +16,7 @@ h1, h2, h3 {
 }
 h1 {
 	font-size: 27px;
-	font-family: 'junction';
+	
 }
 h2 {
 	font-size: 23px;
@@ -27,9 +28,11 @@ h3 {
 	
 	margin:34px 0 0 0;
 }
+p {
+	font-family: georgia;
+}
 a {
 	color: #808080;
-	font-size: 20px;
 	font-style: italic;
 	text-decoration: none;
 }
@@ -77,7 +80,7 @@ nav a:hover {
 	border-top: 4px #000000 solid;
     border-spacing: 40px;
     color: #000000;
-    padding: 9px 0 1px 0;
+    padding: 12px 0 1px 0;
 }
 .page_container {
 	margin: 0 auto;
@@ -97,7 +100,6 @@ section h1 {
 section p {
 	color: #2f2e46;
 	font-size: 18px;
-	font-family: georgia;
 	column-count: 2;
 	-moz-column-count: 2; /* Firefox */
 	text-align: justify;
@@ -111,38 +113,47 @@ section p {
 	width: 210px;
 }
 .side_bar ul li {
-	margin: 10px 0;
+	margin: 14px 0;
 	position: relative;
+}
+.side_bar ul li a {
+	font-size: 16px;
+	color: #b2b1c1;
 }
 .side_bar ul li a:hover:before {
 	content: "\00BB";
 	display: block;
 	left: -13px;
 	position: absolute;
-	top: -2px;
+	top: -7px;
 }
 input {
 	height: 27px;
 	width: 151px;
-	border: 2px solid #cfcfcf;
+	border: 1px solid #cfcfcf;
 }
 #submitButton {
-	border: 2px solid #cfcfcf;
+	border: 1px solid #cfcfcf;
 	background: #ffffff;
 	color: #7d7e7f;
 	height: 32px;
-	width: 50px;
+	width: 49px;
 	padding: 0em;
 }
 footer li {
+	margin-bottom: 18px;
 	position: relative;
+}
+footer ul li a {
+	font-size: 13px;
+	color: #4c4c4c;
 }
 footer ul li a:hover:before {
 	content: "\00BB";
 	display: block;
 	left: -13px;
 	position: absolute;
-	top: -2px;
+	top: -3px;
 }
 footer{
 	background: url('images/background.jpg');
