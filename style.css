@@ -10,23 +10,26 @@ body{
 	background: #ffffff; 
 }
 h1 {
+	color: #2f2e46;
 	background: #ffffff;
 	font-size: 27px;
 	font-family: 'junction';
 	font-weight: lighter;
 }
 h2 {
+	color: #2f2e46;
 	background: #ffffff;
 	font-size: 23px;
 	font-family: 'junction';
 	font-weight: lighter;
 }
 h3 {
+	color: #2f2e46;
 	background: #ffffff;
-	font-family: 'junction';
+	font-family: Arial Verdana;
 	font-size: 19px;
 	font-weight: lighter;
-	margin:37px 0 0 0;
+	margin:34px 0 0 0;
 }
 a {
 	color: #808080;
@@ -54,8 +57,8 @@ nav{
 	border-top: 2px #cfcfcf solid;
 	border-bottom: 2px #cfcfcf solid;
 	background: none;
-	height: 40px;
-	margin: 17px auto;	
+	height: 37px;
+	margin: 16px auto;	
 	padding-top: 0px;
 }
 nav ul {
@@ -77,11 +80,11 @@ nav a  {
 nav a:hover {
 	border-top: 4px black solid;
     border-spacing: 40px;
-    color: #808080;
+    color: black;
     padding: 9px 0 1px 0;
 }
 .page_container {
-	margin: 0 216px;
+	margin: 0 auto;
 	overflow: hidden;
 	width: 940px;
 }
@@ -96,6 +99,7 @@ section h1 {
 	margin: 23px 0px 18px 0;
 }
 section p {
+	color: #2f2e46;
 	font-size: 18px;
 	font-family: georgia;
 	column-count: 2;
@@ -107,7 +111,7 @@ section p {
 .side_bar {
 	float: left;
 	height :210px;
-	margin: 20px 0 0 61px;
+	margin: 23px 0 0 53px;
 	width: 210px;
 }
 .side_bar ul li {
@@ -117,23 +121,32 @@ section p {
 .side_bar ul li a:hover:before {
 	content: "\00BB";
 	display: block;
-	left: -10px;
+	left: -13px;
 	position: absolute;
+	top: -2px;
 }
 input {
-	height:27px;
-	width:151px;
+	height: 27px;
+	width: 151px;
+	border: 2px solid #cfcfcf;
 }
 #submitButton {
-	border: 1px solid #808080;
+	border: 2px solid #cfcfcf;
 	background: #ffffff;
-	height: 28px;
+	color: #7d7e7f;
+	height: 32px;
 	width: 50px;
+	padding: 0em;
+}
+footer li {
+	position: relative;
 }
 footer ul li a:hover:before {
 	content: "\00BB";
-	left: -10px;
-	padding: 8px 0 0 0;	
+	display: block;
+	left: -13px;
+	position: absolute;
+	top: -2px;
 }
 footer{
 	background: url('images/background.jpg');
@@ -157,12 +170,13 @@ footer ul:first-child {
 .footer_content {
 	margin: 0 auto;
 	width: 960px;
+	padding-top: 30px;
 }
 #footer_logo {
 	background: url('images/messina-about_03.jpg');
 	float: left;
 	height: 100px;
-	margin: 0 0 0 25px;
+	margin: -10px 0 0 25px;
 	width: 200px;
 }
 
