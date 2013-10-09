@@ -168,23 +168,25 @@
 				var $box = $('.outer_box');
 				var $elm = $(e.currentTarget).closest('li');
 				var $elmPos	 = $elm.position();
-				console.log($elmPos	);
-			
+				console.log("elmPos");	
 				$('#arrow').removeClass('right');
-				$('#arrow').removeClass('left');	
-
+				$('#arrow').removeClass('left');
 			if($elmPos.left > 500){
 				$box.css({top: $elmPos.top, left: $elmPos.left - 459});
 				$('#arrow').css({left: '434px'});
-				$('#arrow').addClass('left')
-
+				$('#arrow').addClass('left');		
+				$('.page_container .outer_box').mouseleave( function (e) {
+    				$box.removeClass('trigger');
+				});
 			}
 			else {
 				$box.css({top: $elmPos.top, left: $elmPos.left + 235});
 				$('#arrow').css({left: '-9px'});
 				$('#arrow').addClass('right');
+				$('.page_container .outer_box').mouseleave( function (e) {
+    				$box.removeClass('trigger');
+				});
 			}
-
 			if($box.hasClass('trigger') ){
 				$box.removeClass('trigger')
 			}
