@@ -163,40 +163,60 @@
         type="text/javascript">
     </script>
 	<script type="text/javascript">
-		$(document).ready(function(){
+		$(document).ready( function () {
+			var $box,
+				$elm,
+				$elmPos,
+				t;
 			$('.page_container section ul li #view_button').click( function (e) {
-				var $box = $('.outer_box');
-				var $elm = $(e.currentTarget).closest('li');
-				var $elmPos	 = $elm.position();
-				console.log("elmPos");	
+				$box = $('.outer_box');
+				$elm = $(e.currentTarget).closest('li');
+				$elmPos	 = $elm.position();
+				console.log("elmPos", $elmPos.left);
 				$('#arrow').removeClass('right');
 				$('#arrow').removeClass('left');
-			if($elmPos.left > 500){
-				$box.css({top: $elmPos.top, left: $elmPos.left - 459});
-				$('#arrow').css({left: '434px'});
-				$('#arrow').addClass('left');		
-				$('.page_container .outer_box').mouseleave( function (e) {
-    				$box.removeClass('trigger');
-				});
-			}
-			else {
-				$box.css({top: $elmPos.top, left: $elmPos.left + 235});
-				$('#arrow').css({left: '-9px'});
-				$('#arrow').addClass('right');
-				$('.page_container .outer_box').mouseleave( function (e) {
-    				$box.removeClass('trigger');
-				});
-			}
+				if($elmPos.left > 500){
+					$box.css({top: $elmPos.top, left: $elmPos.left - 457});
+					$('#arrow').css({left: '434px'});
+					$('#arrow').addClass('left');
+					$('.page_container .outer_box').mouseleave( function (e) {
+	    				$box.removeClass('trigger');
+					});
+					$('.page_container section ul li').mouseleave( function (e) {
+	    				$box.removeClass('trigger');
+	    			});
+				}
+				else {
+					$box.css({top: $elmPos.top, left: $elmPos.left + 233});
+					$('#arrow').css({left: '-9px'});
+					$('#arrow').addClass('right');
+					$('.page_container .outer_box').mouseleave( function (e) {
+	    				$box.removeClass('trigger');
+	    			});
+	    			$('.page_container section ul li').mouseleave( function (e) {
+	    				$box.removeClass('trigger');
+	    			});
+	    		}
 			if($box.hasClass('trigger') ){
-				$box.removeClass('trigger')
+				$box.removeClass('trigger');
 			}
 			else {
-				$box.addClass('trigger')
-				}; 
-			}); 
+				$box.addClass('trigger');
+			}
+    		$('section ul li').mouseenter(function(e) {
+    			if ($(e.currentTarget).index() !== $elm.index() ){
+    				$box.removeClass('trigger');
+    			}
+    			var boxHover = false;
+			});
+			$('.page_container .outer_box').mouseenter( function (e) {
+    			$box.addClass('trigger');
+    		});
+    		});
 		});
 	</script>
 </html>
+
 				
 				
 
