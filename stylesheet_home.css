@@ -1,0 +1,407 @@
+@font-face {
+	font-family: 'junction';
+	src: url('font/Junction-webfont.eot'); /* IE 5-8 */ 
+	src: local('?'),            
+	url('font/Junction-webfont.woff') format('woff'),    
+	url('font/Junction-webfont.ttf') format('truetype'), 
+	url('font/Junction-webfont.svg#font') format('svg'); /* iOS */
+}
+body{
+	background: #ffffff; 
+	font-family: 'junction';
+}
+h1 {
+	color: #2f2e46;
+	font-weight: lighter;
+	font-family: Arial Verdana;
+	font-size: 19px;
+	margin:34px 0 0 0;
+}
+p {
+	font-family: georgia;
+}
+a {
+	color: #808080;
+	text-decoration: none;
+}
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.header_logo {
+	background: url('images/Untitled-2.png');
+	display: block;
+	height: 91px;
+	margin: 0 auto;
+	width: 222px;	
+}
+.header_logo h1, .header_logo h2, nav h1 {
+	left : -1000px;
+	position : absolute;
+}	
+nav{
+	border-top: 2px #cfcfcf solid;
+	border-bottom: 2px #cfcfcf solid;
+	background: none;
+	height: 37px;
+	margin: 18px auto 0px auto;
+	padding-top: 0px;
+}
+nav ul {
+	font-style: normal;
+	line-height: 40px;	
+	margin: 0 auto;
+	padding: 0;
+	width: 404px;	
+}
+nav ul li {
+	display: inline-block;
+	font-weight: normal;
+	margin: 0px 12px;
+	text-transform: uppercase;
+}
+nav a  {
+	font-style: normal;
+}
+nav a:hover {
+	border-top: 4px #000000 solid;
+    border-spacing: 40px;
+    color: #000000;
+    padding: 12px 0 1px 0;
+}
+.page_container {
+	margin: 0 auto;
+	overflow: hidden;
+	width: 100%;
+}
+.carousel {
+	background: url(images/gradient_background.png) repeat-x;
+	height: 314px;
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+}
+.carousel h2 {
+	color: #cb2457;
+	font-weight: bold;
+	font-size: 40px;
+}
+.carousel h3 {
+	color: #989898;
+	font-size: 23px;
+	font-weight: lighter;
+	text-transform: uppercase;
+}
+.carousel h4 , .lower_container .grid_images ul li p {
+	color: #989898;
+	font-size: 18px;
+	font-weight: lighter;
+}
+.carousel h5 {
+	color: #989898;	
+}
+#carousel-container li div {
+	float: right;
+}
+.page_container #carousel-container {
+	height: 313px;
+	margin: 0 auto;
+	overflow: hidden;
+	transition: left .5s ease-in-out;
+	width: 980px;
+}
+.page_container #carousel-container ul {
+	left: 0px;
+	overflow: hidden;
+	position: relative;
+	width: 3000px;
+}
+.page_container .carousel ul li {
+	float: left;
+	height: 313px;
+	width: 980px; 
+}
+.page_container .carousel1  {
+	background: url(images/perfumes.jpg) no-repeat;
+}
+.page_container .carousel2  {
+	background: url(images/towels.png) no-repeat;
+
+}
+.page_container .carousel3  {
+	background: url(images/glasses.png) no-repeat;
+}
+.carousel2 sup {
+	color:#b7b7b7;
+	font-size: 22px;
+}
+#navLinks li{
+	background : url(images/pagination.png) 0 0;
+	height: 12px;
+	margin-right: 5px;
+	width: 11px;	
+}
+#navLinks .active, #navLinks li:hover {
+	background-position-y: 11px; 
+	cursor: pointer;
+}
+#navLinks {
+	left: 50%;
+	margin-left: -24px;
+	position: absolute;
+	top: 90%;
+	width: 48px;
+}
+.lower_container {
+	display: inline-block;
+	margin-top: 40px;
+	margin-left: 200px;
+	width: 960px;
+}
+.lower_container .grid_images ul li p {
+	font-size: 16px;
+}
+.grid_images {
+	display: inline-block;
+	overflow: hidden;
+	width: 690px;
+}
+.lower_container .grid_images ul li {
+	display: inline-block;
+	float: left;
+	width: 33%;
+}
+.lower_container .grid_images ul li img {
+	height: 218px;
+	width: 218px;
+
+}
+.plain_image {
+	background: #ebebeb;
+	height: 218px;
+	width: 218px;
+}
+.side_bar {
+	display: inline-block;
+	position: absolute;
+	width: 224px;
+}
+input {
+	border: 1px solid #cfcfcf;
+	height: 27px;
+	width: 157px;	
+}
+#submitButton {
+	color: #7d7e7f;
+	border: 1px solid #cfcfcf;
+	background: #ffffff;
+	height: 31px;
+	padding: 0em;
+	width: 57px;
+}
+footer li {
+	margin-bottom: 18px;
+	position: relative;
+}
+footer ul li a {
+	color: #4c4c4c;
+	font-size: 13px;
+	font-style: italic;
+}
+footer ul li a:hover:before {
+	content: "\00BB";
+	display: block;
+	left: -13px;
+	position: absolute;
+	top: -3px;
+}
+footer{
+	background: url('images/background.jpg');
+	color: #f4f3fe;
+	display: block;
+	height: 180px; 
+	overflow: hidden;
+	margin-top: 163px;
+	padding: 25px 0;
+	width: 100%;
+}
+footer ul {
+	display: inline-block;
+	float: left;
+	margin: 0 23px;
+	padding: 0;
+	width: 200px;
+}  
+footer ul:first-child {
+	margin: 0 23px 0 0;	
+}
+.footer_content {
+	margin: 0 auto;
+	padding-top: 13px;
+	width: 960px;
+}
+#footer_logo {
+	background: url('images/messina-about_03.jpg');
+	float: left;
+	height: 100px;
+	margin: -10px 0 0 25px;
+	width: 200px;
+}
+
+.outer_box.trigger {
+	display: block;
+}
+#arrow {
+	background: #ffffff;
+	content: " ";
+	height: 20px;
+	position: absolute;
+	-ms-transform: rotate(45deg);
+	top: 51px;
+	-webkit-transform: rotate(45deg);
+	width: 20px;
+	z-index: 1;
+}
+#arrow.left{
+	box-shadow: #B3B3B3 10px 10px 10px 10px transform:rotate(7deg);	
+	-webkit-box-shadow: #B3B3B3 2px -3px 3px 0px;
+	-moz-box-shadow: #B3B3B3 10px 10px 10px 10px;		
+}
+#arrow.right{
+	box-shadow: #B3B3B3 10px 10px 10px 10px transform:rotate(7deg);	
+	-webkit-box-shadow: #B3B3B3 -2px 2px 0px -1px;
+	-moz-box-shadow: #B3B3B3 10px 10px 10px 10px;
+}
+.magnify_box{
+	float: left;
+	margin: 5px 5px;
+	overflow: hidden; 
+}
+.magnify_box #big_picture {
+	margin:-260px -179px -169px -5px;;
+}
+.outer_box h1 {
+	color: #434258;
+	font-family: arial Verdana;
+}
+.outer_box p{
+	color: #676767;
+	font-family: georgia;	
+}
+.dimension p {
+	color: #676767;
+	font-family: georgia;
+	float: left;
+}
+.buy {
+	color: #676767;
+	font-family: georgia;
+	float: right;
+	text-align: center;
+}
+.buy #buy_button {
+	border: 1px solid #cfcfcf;
+	background: #ffffff;
+	color: #7d7e7f;
+	height: 32px;
+	margin-right: 50px;
+	padding: 0.5em;
+	position: relative;		
+	width: 70px;
+}
+.buy p {
+	margin-left: -36px;
+}
+section {
+	float: left;
+	margin-top: 22px;
+	width: 717px;
+}
+section ul li {
+	background: #ffffff;
+	display: inline-block;
+	float: left;
+	margin: 0 0 0 2px;
+}
+section ul:first-child {
+	margin: 0 0 0 0;	
+}
+section ul li:hover {
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPHJhZGlhbEdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY3g9IjUwJSIgY3k9IjUwJSIgcj0iNzUlIj4KICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiMwNTAxMDEiIHN0b3Atb3BhY2l0eT0iMCIvPgogICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMDAwMDAwIiBzdG9wLW9wYWNpdHk9IjAuMzYiLz4KICA8L3JhZGlhbEdyYWRpZW50PgogIDxyZWN0IHg9Ii01MCIgeT0iLTUwIiB3aWR0aD0iMTAxIiBoZWlnaHQ9IjEwMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-radial-gradient(center, ellipse cover,  rgba(5,1,1,0) 0%, rgba(0,0,0,0.36) 100%); /* FF3.6+ */
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(5,1,1,0)), color-stop(100%,rgba(0,0,0,0.36))); /* Chrome,Safari4+ */
+	background: -webkit-radial-gradient(center, ellipse cover,  rgba(5,1,1,0) 0%,rgba(0,0,0,0.36) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-radial-gradient(center, ellipse cover,  rgba(5,1,1,0) 0%,rgba(0,0,0,0.36) 100%); /* Opera 12+ */
+	background: -ms-radial-gradient(center, ellipse cover,  rgba(5,1,1,0) 0%,rgba(0,0,0,0.36) 100%); /* IE10+ */
+	background: radial-gradient(ellipse at center,  rgba(5,1,1,0) 0%,rgba(0,0,0,0.36) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00050101', endColorstr='#5c000000',GradientType=1 ); /* IE6-8 fallback on horizontal gradient */
+	position: relative;
+}
+section ul li .hidden_info {
+	bottom: 0;
+	display: none;
+	left: 0; 	
+	position: absolute;
+	right: 0;
+	top: 0;		
+}
+section ul li:hover .hidden_info {
+	display: block;	
+}
+section ul li img {
+	height: 220px;
+	position: relative;
+	width: 220px; 
+}
+
+.side_bar {
+	display: inline-block;
+	float: right;
+	height :210px;
+	margin: 20px 0 0 0px;
+	width: 223px;
+}
+.side_bar ul li {
+	margin: 12px 0;
+	position: relative;
+}
+.side_bar ul li a {
+	color: #b2b1c1;
+	font-size: 15px;	
+}
+.side_bar ul li a:hover:before {
+	content: "\00BB";
+	display: block;
+	left: -13px;
+	position: absolute;
+	top: -5px;
+}
+input {
+	border: 1px solid #cfcfcf;
+	height: 27px;
+	width: 157px;	
+}
+#submitButton {
+	color: #7d7e7f;
+	border: 1px solid #cfcfcf;
+	background: #ffffff;
+	height: 31px;
+	padding: 0em;
+	width: 57px;
+}
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
